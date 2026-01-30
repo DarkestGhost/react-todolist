@@ -17,7 +17,7 @@ import {
 
 const App = () => {
   const [todos, setTodos] = useState([]);
-  const [fillter, setFillter] = useState("All");
+  const [filter, setFilter] = useState("All");
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -41,11 +41,11 @@ const App = () => {
   }, []);
 
   const fillteredTodos = useMemo(() => {
-    if (fillter === "All") return todos;
-    if (fillter === "Active") return todos.filter((todo) => !todo.completed);
-    if (fillter === "Complete") return todos.filter((todo) => todo.completed);
+    if (filter === "All") return todos;
+    if (filter === "Active") return todos.filter((todo) => !todo.completed);
+    if (filter === "Complete") return todos.filter((todo) => todo.completed);
     return todos;
-  }, [todos, fillter]);
+  }, [todos, filter]);
 
   const activeTodoCount = todos.filter((todo) => !todo.completed).length;
 
@@ -150,8 +150,8 @@ const App = () => {
           </div>
           {/* footer Todolist */}
           <Footer
-            fillter={fillter}
-            setFillter={setFillter}
+            filter={filter}
+            setFilter={setFilter}
             taskLeft={activeTodoCount}
           />
         </div>
