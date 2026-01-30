@@ -29,7 +29,7 @@ const AddTodo = ({ onAddTodo }) => {
       <button
         type="submit"
         onClick={() => handleChangeAddTodoInput()}
-        className="w-full sm:w-auto px-6 py-3 bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-400 transition-colors duration-300 ease-linear font-semibold shadow-md rounded-xl cursor-pointer"
+        className="w-full sm:w-auto px-6 py-3 bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-400 transition-colors duration-300 ease-linear font-semibold shadow-md cursor-pointer rounded-xl"
       >
         Add
       </button>
