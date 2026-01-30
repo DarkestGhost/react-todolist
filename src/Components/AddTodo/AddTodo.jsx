@@ -1,0 +1,40 @@
+import React, { useState, useRef } from "react";
+
+const AddTodo = ({ onAddTodo }) => {
+  const [title, setTitle] = useState("");
+  const inputRef = useRef(null);
+
+  const handleChangeAddTodoInput = () => {
+    onAddTodo(title);
+    setTitle("");
+    inputRef.current.focus();
+  };
+
+  const handleKeyDownInput = ({ key }) => {
+    if (key === "Enter") handleChangeAddTodoInput();
+    if (key === "Escape") inputRef.current.value = "";
+  };
+
+  return (
+    <div className="flex flex-col sm:flex-row gap-3 mt-4">
+      <input
+        value={title}
+        onChange={(event) => setTitle(event.target.value)}
+        onKeyDown={(event) => handleKeyDownInput(event)}
+        ref={inputRef}
+        type="text"
+        placeholder="Add a new task..."
+        className="w-full sm:w-4/5 p-3 bg-white/80 text-gray-900 placeholder-gray-400 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white dark:focus:bg-gray-900 transition-all ease-linear shadow-md rounded-xl"
+      />
+      <button
+        type="submit"
+        onClick={() => handleChangeAddTodoInput()}
+        className="w-full sm:w-auto px-6 py-3 bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 dark:focus:ring-blue-400 transition-colors duration-300 ease-linear font-semibold rounded-xl shadow-md cursor-pointer"
+      >
+        Add
+      </button>
+    </div>
+  );
+};
+
+export default AddTodo;
