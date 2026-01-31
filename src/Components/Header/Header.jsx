@@ -26,7 +26,7 @@ const Header = () => {
         <span className="text-2xl font-bold">Todo List</span>
       </div>
       <button
-        className={`${darkMode ? "bg-indigo-900/30 text-indigo-400 hover:bg-indigo-800/40 hover:text-indigo-300" : "bg-yellow-100 text-yellow-500 hover:bg-yellow-200 hover:text-yellow-600"} relative w-9 h-9 p-2 flex justify-center items-center rounded-xl cursor-pointer transition-colors duration-300 ease-linear`}
+        className={`${darkMode ? "text-indigo-400 bg-indigo-900/30 hover:text-indigo-300 hover:bg-indigo-800/40" : "bg-yellow-100 text-yellow-500 hover:bg-yellow-200 hover:text-yellow-600"} relative w-9 h-9 p-2 flex justify-center items-center rounded-xl cursor-pointer transition-colors duration-300 ease-linear`}
         onClick={() => setDarkMode(!darkMode)}
       >
         <LuSun
