@@ -1,30 +1,34 @@
 # React Todo List App
 
 A simple and interactive Todo List application built with **React**, **Vite**, and **Tailwind CSS**.  
-This project helped me practice managing state, structuring components, and improving user experience with animations.
+This project helped me practice managing state, structuring components, and working with a mock backend using **Axios** and **json-server**.
 
 ## Features
 
 - Add, edit, and delete todos
 - Filter todos by **All**, **Active**, or **Completed**
 - **Dark / Light mode** toggle
-- Persistent data using **LocalStorage**
+- Persistent todos using **json-server** (mock API)  
+- Persistent theme preference using **LocalStorage**
 - Smooth animations with **Framer Motion**
 
 ## What I Learned
 
 - Managing component state with **React hooks** (`useState`, `useEffect`, `useRef`)
+- Fetching and persisting data using **Axios** with **json-server**
 - Structuring reusable and scalable **components**
-- Persisting data in the browser using **LocalStorage**
 - Handling user interactions and UI states
 - Improving UX with **animations**
+- Persisting UI preferences in the browser with **LocalStorage**
 
 ## Tech Stack
 
-- **React** (Functional Components & Hooks)
-- **Vite** (Fast build tool for React)
-- **Tailwind CSS** (Utility-first styling)
-- **Framer Motion** (Animations)
+- **React** (Functional Components & Hooks)  
+- **Vite** (Fast build tool for React)  
+- **Tailwind CSS** (Utility-first styling)  
+- **Framer Motion** (Animations)  
+- **Axios** (HTTP requests to json-server)  
+- **json-server** (Mock backend)
 
 ## How to Run
 
