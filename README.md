@@ -1,52 +1,51 @@
-# 📝 Modern Todo Application
+# React Todo List App
 
-A sleek, functional, and animated Todo List application built with **React**, **Vite**, and **Tailwind CSS**. This project demonstrates core React principles such as state lifting, conditional rendering, and component-based architecture.
+A simple and interactive Todo List application built with **React**, **Vite**, and **Tailwind CSS**.  
+This project helped me practice managing state, structuring components, and improving user experience with animations.
 
-## ✨ Features
+## Features
 
-- **Complete CRUD**: Create, Read, Update, and Delete tasks with ease.
-- **Persistent Storage**: Tasks are saved in **Json-Server** to ensure data persists after page refreshes. And Theme Saved in **LocalStorage**
-- **Smart Filtering**: Toggle between **All**, **Active**, and **Completed** tasks seamlessly.
-- **Smooth Animations**: Enhanced user experience using **Framer Motion** for list transitions.
-- **Dark Mode Support**: Fully responsive design with a beautiful Dark/Light theme toggle.
-- **In-place Editing**: click the edit icon to modify tasks directly in the list.
+- Add, edit, and delete todos
+- Filter todos by **All**, **Active**, or **Completed**
+- **Dark / Light mode** toggle
+- Persistent data using **LocalStorage**
+- Smooth animations with **Framer Motion**
 
-## 🛠️ Tech Stack
+## What I Learned
 
-- **Frontend**: React.js (Hooks: `useState`, `useEffect`, `useRef`, `useMemo`)
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Build Tool**: Vite
-- **React Libraries**: `React-Loader-Spinner` - `React-Hot-Toast` - `Axios` - `React-Icons`
+- Managing component state with **React hooks** (`useState`, `useEffect`, `useRef`)
+- Structuring reusable and scalable **components**
+- Persisting data in the browser using **LocalStorage**
+- Handling user interactions and UI states
+- Improving UX with **animations**
 
-## 🧠 Technical Highlights
+## Tech Stack
 
-In this project, I focused on implementing best practices for a Junior React Developer:
+- **React** (Functional Components & Hooks)
+- **Vite** (Fast build tool for React)
+- **Tailwind CSS** (Utility-first styling)
+- **Framer Motion** (Animations)
 
-1.  **Lifting State Up**: Managed the filtering logic in the parent component (`App.jsx`) and synchronized it with the `Footer` and `TodoList` components.
-2.  **State Synchronization**: Used `useEffect` to keep the LocalStorage in sync with the application state.
-3.  **Ref Management**: Utilized `useRef` for auto-focusing the input field during task adding to improve UX.
-4.  **Optimized Rendering**: Implemented conditional class rendering for active states and task completion.
-
-## 📸 Screenshots
-
-| Light Mode                                  | Dark Mode                                 |
-| ------------------------------------------- | ----------------------------------------- |
-| ![Light Mode](./screenShots/Light-Mode.png) | ![Dark Mode](./screenShots/Dark-Mode.png) |
-
-## 🚀 Getting Started
+## How to Run
 
 1. **Clone the repo :**
-   git clone https://github.com/DarkestGhost/react-todolist.git
 
-2. **Enter the project :**
+```bash
+git clone https://github.com/DarkestGhost/react-todolist.git
+```
+
+2. **Enter to project :**
+
    cd react-todolist
-   
+
 3. **Install dependencies :**
+
    npm install
 
-4. **Run the server :**
+4. **Start the server :**
+
    npm run server
 
-5. **Run the project :**
+5. **Start the App :**
+
    npm run dev
