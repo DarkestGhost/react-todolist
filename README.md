@@ -38,7 +38,7 @@ In this project, I focused on implementing best practices for a Junior React Dev
 
 1. **Clone the repo**
    ```bash
-   git clone [https://github.com/DarkestGhost/react-todolist.git](https://github.com/DarkestGhost/react-todolist.git)
+   git clone (https://github.com/DarkestGhost/react-todolist.git)
    ```
 2. **Install dependencies**
    npm install
