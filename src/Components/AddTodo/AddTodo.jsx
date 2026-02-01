@@ -5,7 +5,7 @@ const AddTodo = ({ onAddTodo }) => {
   const inputRef = useRef(null);
 
   const handleChangeAddTodoInput = () => {
-    onAddTodo(title);
+    onAddTodo(title.trim());
     setTitle("");
     inputRef.current.focus();
   };
