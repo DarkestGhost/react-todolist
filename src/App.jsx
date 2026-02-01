@@ -48,7 +48,9 @@ const App = () => {
   }, [todos, filter]);
 
   const visibleTodos = useMemo(() => {
-    return filteredTodos.filter((todo) => todo.title.includes(search));
+    return filteredTodos.filter((todo) =>
+      todo.title.toLowerCase().includes(search.toLowerCase()),
+    );
   }, [filteredTodos, search]);
 
   const activeTodoCount = todos.filter((todo) => !todo.completed).length;
