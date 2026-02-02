@@ -10,7 +10,7 @@ const SearchTodo = ({ value, onChange }) => {
       <input
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="w-full p-3 pl-10 placeholder-gray-400 text-gray-900 bg-white/80 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white dark:focus:bg-gray-900 transition-all ease-linear rounded-4xl shadow-md"
+        className="w-full p-3 pl-10 placeholder-gray-400 text-gray-900 bg-white/80 dark:bg-gray-700 dark:text-gray-100 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-white dark:focus:bg-gray-900 transition-all duration-300 ease-linear rounded-4xl shadow-md"
         type="text"
         placeholder="Search Todos..."
       />

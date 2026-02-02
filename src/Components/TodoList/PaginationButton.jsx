@@ -40,7 +40,7 @@ const PaginationButton = ({ currentPage, totalPages, setCurrentPage }) => {
         <button
           type="button"
           onClick={() => typeof page === "number" && setCurrentPage(page)}
-          className={`px-3 py-1 rounded-xl ${currentPage === page ? "bg-blue-600 text-white hover:bg-blue-700" : "bg-gray-300 hover:bg-gray-400 hover:text-zinc-800 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"}`}
+          className={`px-3 py-1 rounded-xl transition-all duration-300 ease-linear ${currentPage === page ? "bg-blue-600 text-white hover:bg-blue-700" : "bg-gray-300 hover:bg-gray-400 hover:text-zinc-800 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"}`}
         >
           {page}
         </button>

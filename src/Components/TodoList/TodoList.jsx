@@ -33,6 +33,7 @@ const TodoList = ({ loading, filteredTodos, onEdit, onDelete }) => {
         ) : paginatedTodos.length ? (
           paginatedTodos.map((todo) => (
             <motion.div
+              className="transition-all duration-300 ease-linear"
               key={todo.id}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}

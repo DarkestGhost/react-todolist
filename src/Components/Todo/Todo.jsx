@@ -33,7 +33,7 @@ const Todo = ({ id, title, completed, onDeleteTodo, onEditTodo }) => {
 
   return (
     <div
-      className={`flex justify-between items-center p-3 bg-white/80 text-gray-900 dark:bg-gray-700 dark:text-gray-100 transition duration-300 shadow-md rounded-xl`}
+      className={`flex justify-between items-center p-3 bg-white/80 text-gray-900 dark:bg-gray-700 dark:text-gray-100 transition duration-300 ease-linear shadow-md rounded-xl`}
     >
       <div className="flex items-center gap-x-2 flex-1 min-w-0">
         <input
@@ -68,13 +68,13 @@ const Todo = ({ id, title, completed, onDeleteTodo, onEditTodo }) => {
               setIsEditing(true);
             }}
             href="#"
-            className={`absolute bg-gray-300/10 p-2 rounded-xl hover:bg-gray-300/30 dark:bg-gray-400/10 dark:hover:bg-gray-400/20 transition duration-300 ease-linear ${completed ? "scale-0 rotate-90 opacity-0" : "scale-100 rotate-0 opacity-100"} `}
+            className={`absolute bg-gray-300/10 p-2 rounded-xl hover:bg-gray-300/30 dark:bg-gray-400/10 dark:hover:bg-gray-400/20 transition-all duration-300 ease-linear ${completed ? "scale-0 rotate-90 opacity-0" : "scale-100 rotate-0 opacity-100"} `}
           >
             <LuPencil size={20} />
           </a>
 
           <div
-            className={`absolute bg-green-200 text-green-800 dark:bg-green-800 dark:text-green-200 p-2 rounded-xl transition duration-300 ease-linear ${
+            className={`absolute bg-green-200 text-green-800 dark:bg-green-800 dark:text-green-200 p-2 rounded-xl transition-all duration-300 ease-linear ${
               completed
                 ? "scale-100 rotate-0 opacity-100"
                 : "scale-0 -rotate-90 opacity-0"
@@ -87,7 +87,7 @@ const Todo = ({ id, title, completed, onDeleteTodo, onEditTodo }) => {
         <a
           onClick={() => onDeleteTodo(id)}
           href="#"
-          className="bg-red-600 hover:bg-red-700 dark:bg-red-500 dark:hover:bg-red-600 text-white p-2 rounded-xl transition duration-300 ease-linear shadow-sm"
+          className="bg-red-600 hover:bg-red-700 dark:bg-red-500 dark:hover:bg-red-600 text-white p-2 rounded-xl transition-all duration-300 ease-linear shadow-sm"
         >
           <LuTrash2 size={20} />
         </a>
