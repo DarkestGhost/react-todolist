@@ -8,7 +8,7 @@ This project helped me practice managing state, structuring components, and work
 - Add, edit, and delete todos
 - Filter todos by **All**, **Active**, or **Completed**
 - **Real-time Search**: Instant filtering of todos based on user input.
-- **Smart Pagination**: Efficiently handle large lists with dynamic page numbers.
+- **Smart Pagination**: Efficiently handle lists with dynamic page numbers.
 - **Dark / Light mode** toggle
 - Persistent todos using **json-server** (mock API)
 - Persistent theme preference using **LocalStorage**
