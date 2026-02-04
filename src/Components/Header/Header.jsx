@@ -26,19 +26,27 @@ const Header = () => {
         <span className="text-2xl font-bold">Todo List</span>
       </div>
       <button
-        className={`${darkMode ? "text-indigo-400 hover:text-indigo-300 bg-indigo-900/30 hover:bg-indigo-800/40" : "bg-yellow-100 text-yellow-500 hover:bg-yellow-200 hover:text-yellow-600"} relative w-9 h-9 p-2 flex justify-center items-center rounded-xl cursor-pointer transition-colors duration-300 ease-linear`}
         onClick={() => setDarkMode(!darkMode)}
+        className={`relative w-9 h-9 p-2 flex justify-center items-center rounded-xl cursor-pointer transition-all duration-300 ease-linear ${
+          darkMode
+            ? "bg-amber-100 text-amber-600 hover:bg-amber-200 hover:text-amber-700 hover:shadow-[0_0_20px_rgba(251,191,36,0.4)] shadow-[0_0_15px_rgba(251,191,36,0.2)]"
+            : "bg-indigo-100 text-indigo-600 hover:text-indigo-700 hover:bg-indigo-200 shadow-[0_0_15px_rgba(79,70,229,0.2)] hover:shadow-[0_0_20px_rgba(79,70,229,0.4)]"
+        }`}
       >
         <LuSun
           size={20}
-          className={`absolute transition-all duration-300 ${darkMode ? "scale-0 rotate-90 opacity-0" : "scale-100 rotate-0 opacity-100"}`}
+          className={`absolute transition-all duration-300 ${
+            darkMode
+              ? "scale-100 rotate-0 opacity-100"
+              : "scale-0 rotate-90 opacity-0"
+          }`}
         />
         <LuMoon
           size={20}
           className={`absolute transition-all duration-300 ${
             darkMode
-              ? "scale-100 rotate-0 opacity-100"
-              : "scale-0 -rotate-90 opacity-0"
+              ? "scale-0 -rotate-90 opacity-0"
+              : "scale-100 rotate-0 opacity-100"
           }`}
         />
       </button>
